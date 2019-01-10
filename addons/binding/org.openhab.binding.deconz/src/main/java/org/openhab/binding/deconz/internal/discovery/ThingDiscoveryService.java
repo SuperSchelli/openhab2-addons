@@ -72,6 +72,8 @@ public class ThingDiscoveryService extends AbstractDiscoveryService implements T
             thingTypeUID = BindingConstants.THING_TYPE_TEMPERATURE_SENSOR;
         } else if (sensor.type.contains("ZHAHumidity")) { // ZHAHumidity
             thingTypeUID = BindingConstants.THING_TYPE_HUMIDITY_SENSOR;
+        } else if (sensor.type.contains("ZHAPressure")) { // ZHAHumidity
+            thingTypeUID = BindingConstants.THING_TYPE_PRESSURE_SENSOR;
         } else if (sensor.type.contains("ZHAOpenClose")) { // ZHAOpenClose
             thingTypeUID = BindingConstants.THING_TYPE_OPENCLOSE_SENSOR;
         } else {

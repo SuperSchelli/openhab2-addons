@@ -30,6 +30,7 @@ public class BindingConstants {
     public static final ThingTypeUID THING_TYPE_LIGHT_SENSOR = new ThingTypeUID(BINDING_ID, "lightsensor");
     public static final ThingTypeUID THING_TYPE_TEMPERATURE_SENSOR = new ThingTypeUID(BINDING_ID, "temperaturesensor");
     public static final ThingTypeUID THING_TYPE_HUMIDITY_SENSOR = new ThingTypeUID(BINDING_ID, "humiditysensor");
+    public static final ThingTypeUID THING_TYPE_PRESSURE_SENSOR = new ThingTypeUID(BINDING_ID, "pressuresensor");
     public static final ThingTypeUID THING_TYPE_OPENCLOSE_SENSOR = new ThingTypeUID(BINDING_ID, "openclosesensor");
 
     // List of all Channel ids
@@ -38,6 +39,7 @@ public class BindingConstants {
     public static final String CHANNEL_VALUE = "value";
     public static final String CHANNEL_TEMPERATURE = "temperature";
     public static final String CHANNEL_HUMIDITY = "humidity";
+    public static final String CHANNEL_PRESSURE = "pressure";
     public static final String CHANNEL_DAYLIGHT = "light";
     public static final String CHANNEL_LIGHT_LUX = "lightlux";
     public static final String CHANNEL_BUTTON = "button";

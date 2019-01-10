@@ -170,6 +170,26 @@
 		<description>Current humidity</description>
 		<state readOnly="true" pattern="%.2f %unit%"></state>
 	</channel-type>
+	<thing-type id="pressuresensor">
+		<supported-bridge-type-refs>
+			<bridge-type-ref id="deconz" />
+		</supported-bridge-type-refs>
+		<label>Pressure Sensor</label>
+		<description>A pressure senor</description>
+		<channels>
+			<channel typeId="pressure" id="pressure"></channel>
+		</channels>
+		<config-description>
+			<parameter name="id" type="text" required="true">
+				<label>Sensor ID</label>
+				<description>The deCONZ bridge assigns an integer number ID to each sensor.</description></parameter></config-description>
+	</thing-type>
+	<channel-type id="pressure">
+		<item-type>Number:Pressure</item-type>
+		<label>Pressure</label>
+		<description>Current pressure</description>
+		<state readOnly="true" pattern="%.1f%unit%"></state>
+	</channel-type>
 
 	<thing-type id="daylightsensor">
 		<supported-bridge-type-refs>
